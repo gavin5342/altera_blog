@@ -67,6 +67,14 @@ Some fabricators have a separate PTH to copper specification instead of using ri
 | annular ring | 150      |
 |              |          |
 
+## Escape routing
+
+Areas of the BGA with IO pins are partially depopulated to allow wide routing lanes - 1mm gap allows 13 traces with $75 \mu m$ track/gap.
+
+## Conclusion
+
+The VPBGA allows lower layer count and more relaxed PCB rules than you might expect from a fine pitch BGA package.  These characteristics widen the choice of PCB fabricator for the designer _and_ shorten lead times due to simpler manufacturing processes compared to HDI PCBs (especially Type II and Type III).
+
 ## References
 
 [Agilex 5 board design](https://www.altera.com/design/agilex-5/design-hub/board)
