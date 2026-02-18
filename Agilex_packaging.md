@@ -75,6 +75,8 @@ Areas of the BGA with IO pins are partially depopulated to allow wide routing la
 
 The VPBGA allows lower layer count and more relaxed PCB rules than you might expect from a fine pitch BGA package.  These characteristics widen the choice of PCB fabricator for the designer _and_ shorten lead times due to simpler manufacturing processes compared to HDI PCBs (especially Type II and Type III).
 
+The B32 package shown here provides 550 GPIO + 24 transceivers.  In comparison the F31 package for Cyclone V GX provides 489 GPIO and 12 transceivers for a similar area.
+
 ## References
 
 [Agilex 5 board design](https://www.altera.com/design/agilex-5/design-hub/board)
