@@ -41,7 +41,7 @@ Gap and track can be read from a PCB fabricator's technical capability.  Track a
 
 ### Drill and annular ring
 
-I want to place a via between two pads.  Use Pythagoras' theorem to calculate the diagonal:
+I want to place a via between two pads.  Use Pythagoras' theorem to calculate the diagonal between centres:
 
 ![diagonal](./images/inner_pads.png)
 
@@ -49,22 +49,22 @@ $A=\sqrt{B^{2}+C^{2}}\Rightarrow d=\sqrt{650^{2}+650^{2}}=919\mu m$
 
 The maximum pad size for the via is then defined:
 
-$d_{diagonal}=2.d_{gap}+r_{pad}\Rightarrow r_{pad}=d_{diagonal}-2.d_{pad}=719\mu m$ 
+$d_{diagonal}=2.d_{gap}+r_{pad-via}+r_{pad}\Rightarrow r_{pad}=d_{diagonal}-2.d_{gap}-r_{pad-via}=414\mu m$ or if only $75 \mu m$ gap is required, a $464 \mu m$ pad could be accommodated.
 
 The pad radius is defined in terms of drill diameter and annular ring:
 
 $r_{pad}=d_{drill}+2.d_{annular-ring}$
 
-For example, a $200\mu m$ drill and annular ring allows a $600 \mu m$ pad which is within the maximum size to place between 4 pads.
+For example, a $150\mu m$ drill and annular ring allows a $450 \mu m$ pad which is within the maximum size to place between 4 pads.
 
 Some fabricators have a separate PTH to copper specification instead of using ring + gap.  An example set of capabilities that would match using the VFBGA package with PTH only (also referred to as multilayer) is:
 
 | parameter    | value um |
 | ------------ | -------- |
 | track        | 100      |
-| gap          | 100      |
-| drill width  | 200      |
-| annular ring | 200      |
+| gap          | 75       |
+| drill width  | 150      |
+| annular ring | 150      |
 |              |          |
 
 ## References
